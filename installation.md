@@ -47,5 +47,5 @@ $ npm install webpack@1.2.x --save-dev
 更多可阅读[使用][usage]。
 
 [node.js]: http://nodejs.org
-[changelog]: changelog.md
-[usage]: usage.md
+[changelog]: changelog.html
+[usage]: usage.html
