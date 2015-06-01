@@ -34,13 +34,13 @@ webpack 支持 SourceUrls 和 SourceMaps，从而让 debug 更友好。通过 wa
 webpack 的主要目标是 web，但同时也支持 [WebWorker][worker-loader] 和 node.js 的打包。
 
 
-[plugin]: ./plugin.md
-[loaders]: ./loaders.md
-[AMD]: ./amd.md
-[CommonJs]: ./commonjs.md
-[split]: ./code-splitting.md
-[optimization]: ./optimization.md
-[request-caching]: ./long-term-caching.md
-[webpack-dev-middleware]: ./webpack-dev-middleware.md
-[webpack-dev-server]: ./webpack-dev-server.md
-[worker-loader]: ./worker-loader.md
+[plugin]: plugin.md
+[loaders]: loaders.md
+[AMD]: amd.md
+[CommonJs]: commonjs.md
+[split]: code-splitting.md
+[optimization]: optimization.md
+[request-caching]: long-term-caching.md
+[webpack-dev-middleware]: webpack-dev-middleware.md
+[webpack-dev-server]: webpack-dev-server.md
+[worker-loader]: worker-loader.md

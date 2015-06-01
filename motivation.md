@@ -222,8 +222,8 @@ require("./image.png");
 [AMD]: https://github.com/amdjs/amdjs-api/wiki/AMD
 [require.js]: http://requirejs.org/
 [curl]: https://github.com/cujojs/curl
-[CommonJs]: http://webpack.github.io/docs/commonjs.html
 [GWT]: https://developers.google.com/web-toolkit/doc/latest/DevGuideCodeSplitting
-[Code Spliting]: ./code-splitting.html
-[Loaders]: ./loaders.html
-[Using loaders]: ./using-loaders.html
+[CommonJs]: commonjs.md
+[Code Spliting]: code-splitting.md
+[Loaders]: loaders.md
+[Using loaders]: using-loaders.md
