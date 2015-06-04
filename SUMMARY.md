@@ -13,7 +13,7 @@
 	- [开发工具](dev-tools.md)
 	- [疑难解答](troubleshooting.md)
 - 教程及示例
-	- [入门](tutorials/getting-started/example.md)
+	- [入门](tutorials/getting-started/index.md)
 	- [教程列表](list-tutorials.md)
 	- [示例](examples.md)
 - 指南
