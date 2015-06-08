@@ -1,0 +1,662 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>入门 | webpack</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../../list-tutorials.html" />
+    
+    
+    <link rel="prev" href="../../troubleshooting.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="2.1" data-basepath="../.." data-revision="Mon Jun 08 2015 18:49:40 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        webpack
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> 入门</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="motivation.html">
+            
+                
+                    <a href="../../motivation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        动机
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="what-is-webpack.html">
+            
+                
+                    <a href="../../what-is-webpack.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        webpack 是什么
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="installation.html">
+            
+                
+                    <a href="../../installation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        安装
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="usage.html">
+            
+                
+                    <a href="../../usage.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        用法
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+            <span><b>1.5.</b> 引用模块</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+            <span><b>1.6.</b> Vendor Modules</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="using-loaders.html">
+            
+                
+                    <a href="../../using-loaders.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        使用加载器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="using-plugins.html">
+            
+                
+                    <a href="../../using-plugins.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        使用插件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="dev-tools.html">
+            
+                
+                    <a href="../../dev-tools.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        开发工具
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="troubleshooting.html">
+            
+                
+                    <a href="../../troubleshooting.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        疑难解答
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> 教程及示例</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.1" data-path="tutorials/getting-started/index.html">
+            
+                
+                    <a href="../../tutorials/getting-started/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        入门
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="list-tutorials.html">
+            
+                
+                    <a href="../../list-tutorials.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        教程列表
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="examples.html">
+            
+                
+                    <a href="../../examples.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        示例
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 指南</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" >
+            
+            <span><b>3.1.</b> CommonJs</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+            <span><b>3.2.</b> AMD</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+            <span><b>3.3.</b> ...</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 搭配工具</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" >
+            
+            <span><b>4.1.</b> grunt</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+            <span><b>4.2.</b> gulp</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" >
+            
+            <span><b>4.3.</b> bower</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" >
+            
+            <span><b>4.4.</b> karma</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> 资源列表</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> API</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> 开发</span>
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >webpack</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="webpack-%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B">webpack &#x5165;&#x95E8;&#x6559;&#x7A0B;</h1>
+<h2 id="%E6%AC%A2%E8%BF%8E">&#x6B22;&#x8FCE;</h2>
+<p>&#x8FD9;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6559;&#x7A0B;&#x4F1A;&#x901A;&#x4E2A;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#x6765;&#x4F5C;&#x4E3A;&#x6307;&#x5357;&#x3002;</p>
+<p>&#x4ECE;&#x4E2D;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5B66;&#x5230;&#xFF1A;</p>
+<ul>
+<li>&#x600E;&#x4E48;&#x5B89;&#x88C5; webpack</li>
+<li>&#x600E;&#x4E48;&#x4F7F;&#x7528; webpack</li>
+<li>&#x600E;&#x4E48;&#x4F7F;&#x7528;&#x52A0;&#x8F7D;&#x5668;</li>
+<li>&#x600E;&#x4E48;&#x4F7F;&#x7528;&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;</li>
+</ul>
+<hr>
+<h2 id="%E5%AE%89%E8%A3%85-webpack">&#x5B89;&#x88C5; webpack</h2>
+<p>&#x9996;&#x5148;&#x786E;&#x4FDD;&#x5B89;&#x88C5;&#x4E86; <a href="http://nodejs.org/" target="_blank">node.js</a></p>
+<pre><code class="lang-bash">$ npm install webpack -g
+</code></pre>
+<blockquote>
+<p>&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x786E;&#x4FDD;&#x53EF;&#x4EE5;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x4F7F;&#x7528; webpack &#x547D;&#x4EE4; </p>
+</blockquote>
+<hr>
+<h2 id="%E8%AE%BE%E5%AE%9A%E7%BC%96%E8%AF%91">&#x8BBE;&#x5B9A;&#x7F16;&#x8BD1;</h2>
+<p>&#x4ECE;&#x4E00;&#x4E2A;&#x7A7A;&#x767D;&#x6587;&#x4EF6;&#x5F00;&#x59CB;&#xFF0C;&#x521B;&#x5EFA;&#x4EE5;&#x4E0B;&#x6587;&#x4EF6;&#xFF1A;</p>
+<p>&#x589E;&#x52A0; <code>entry.js</code></p>
+<pre><code class="lang-js"><span class="hljs-built_in">document</span>.write(<span class="hljs-string">&quot;It works.&quot;</span>);
+</code></pre>
+<p>&#x589E;&#x52A0; <code>index.html</code></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">&quot;utf-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/javascript&quot;</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;bundle.js&quot;</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">&quot;utf-8&quot;</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<p>&#x7136;&#x540E;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-bash">$ webpack ./entry.js bundle.js
+</code></pre>
+<p>&#x8FD9;&#x5C06;&#x7F16;&#x8BD1; entry.js &#x5E76;&#x8F93;&#x51FA;&#x4E3A; bundle.js&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E00;&#x5207;&#x6B63;&#x5E38;&#xFF0C;&#x5C06;&#x8F93;&#x5165;&#x7C7B;&#x4F3C;&#x4E0B;&#x9762;&#x7684;&#x4FE1;&#x606F;&#xFF1A;</p>
+<pre><code>Hash: e97678c23acf8ee01956
+Version: webpack 1.9.10
+Time: 135ms
+    Asset     Size  Chunks             Chunk Names
+bundle.js  1.44 kB       0  [emitted]  main
+   [0] ./entry.js 29 bytes {0} [built]
+</code></pre><p>&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00; <code>index.html</code>&#xFF0C;&#x5C06;&#x5C55;&#x793A; <code>It works.</code>&#x3002;</p>
+<pre><code class="lang-html">It works.
+</code></pre>
+<hr>
+<h2 id="%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%96%87%E4%BB%B6">&#x7B2C;&#x4E8C;&#x4E2A;&#x6587;&#x4EF6;</h2>
+<p>&#x4E0B;&#x4E00;&#x6B65;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x628A;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x79FB;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
+<p>&#x589E;&#x52A0; <code>content.js</code></p>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-string">&quot;It works from content.js.&quot;</span>;
+</code></pre>
+<p>&#x66F4;&#x65B0; <code>entry.js</code></p>
+<pre><code class="lang-diff"><span class="hljs-deletion">- document.write(&quot;It works.&quot;);</span>
+<span class="hljs-addition">+ document.write(require(&quot;./content.js&quot;));</span>
+</code></pre>
+<p>&#x7136;&#x540E;&#x7F16;&#x8BD1;</p>
+<pre><code class="lang-bash">$ webpack ./entry.js bundle.js
+</code></pre>
+<p>&#x5237;&#x65B0;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5185;&#x5BB9;&#x53D8;&#x4E3A; <code>It works from content.js.</code>&#x3002;</p>
+<pre><code class="lang-html">It works from content.js.
+</code></pre>
+<blockquote>
+<p>webpack &#x4F1A;&#x5206;&#x6790;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF08;entry.js&#xFF09;&#x6765;&#x627E;&#x5BFB;&#x4F9D;&#x8D56;&#x6587;&#x4EF6;&#x3002;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#xFF08;&#x53C8;&#x79F0;&#x4E4B;&#x4E3A;&#x6A21;&#x5757;&#xFF09;&#x4F1A;&#x5305;&#x62EC;&#x5230; <code>bundle.js</code> &#x4E2D;&#x3002;webpack &#x4F1A;&#x7ED9;&#x6BCF;&#x4E2A;&#x6A21;&#x5757;&#x4E00;&#x4E2A;&#x552F;&#x4E00;&#x7684; id&#xFF0C;&#x7136;&#x540E;&#x5728; <code>bundle.js</code> &#x4E2D;&#x901A;&#x8FC7;&#x8BE5; id &#x6765;&#x8BBF;&#x95EE;&#x5BF9;&#x5E94;&#x7684;&#x6A21;&#x5757;&#x3002;&#x542F;&#x52A8;&#x65F6;&#xFF0C;&#x53EA;&#x4F1A;&#x6267;&#x884C;&#x5165;&#x53E3;&#x6A21;&#x5757;&#x3002;&#x4E00;&#x4E2A;&#x77ED;&#x5C0F;&#x7684;&#x8FD0;&#x884C;&#x65F6;&#x63D0;&#x4F9B;&#x4E86; <code>require</code> &#x51FD;&#x6570;&#xFF0C;&#x5728;&#x5F15;&#x7528;&#x6A21;&#x5757;&#x65F6;&#x4F1A;&#x6267;&#x884C;&#x4F9D;&#x8D56;&#x6A21;&#x5757;&#x3002;</p>
+</blockquote>
+<hr>
+<h2 id="%E9%A6%96%E4%B8%AA%E5%8A%A0%E8%BD%BD%E5%99%A8">&#x9996;&#x4E2A;&#x52A0;&#x8F7D;&#x5668;</h2>
+<p>&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5728;&#x5E94;&#x7528;&#x4E2D;&#x589E;&#x52A0;&#x4E00;&#x4E2A; css &#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x56E0;&#x4E3A; webpack &#x672C;&#x8EAB;&#x53EA;&#x80FD;&#x652F;&#x6301; js&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981; <code>css-loader</code> &#x6765;&#x5904;&#x7406; css &#x6587;&#x4EF6;&#xFF0C;&#x540C;&#x65F6;&#x8FD8;&#x9700;&#x8981;&#x4E00;&#x4E2A; <code>style-loader</code> &#x6765;&#x5728;&#x9875;&#x9762;&#x4E2D;&#x4F7F;&#x7528; css &#x6587;&#x4EF6;&#x91CC;&#x5B9A;&#x4E49;&#x7684;&#x6837;&#x5F0F;&#x3002;</p>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7A7A;&#x767D;&#x7684; <code>node_modules</code> &#x76EE;&#x5F55;&#x3002;</p>
+<p>&#x6267;&#x884C; <code>npm install css-loadr stle-loader</code> &#x6765;&#x5B89;&#x88C5;&#x52A0;&#x8F7D;&#x5668;&#x3002;&#xFF08;&#x56E0;&#x4E3A;&#x9700;&#x8981;&#x5B89;&#x88C5;&#x5728;&#x5F53;&#x524D;&#x5E94;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x9700;&#x8981; <code>-g</code> &#x53C2;&#x6570;&#xFF09;</p>
+<p>&#x7136;&#x540E;&#x5177;&#x4F53;&#x4F7F;&#x7528;</p>
+<p>&#x589E;&#x52A0; <code>style.css</code></p>
+<pre><code class="lang-css"><span class="hljs-tag">body</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> yellow</span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+<p>&#x66F4;&#x65B0; <code>entry.js</code></p>
+<pre><code class="lang-diff"><span class="hljs-addition">+ require(&quot;!style!css!./style.css&quot;);</span>
+document.write(require(&quot;./content.js&quot;));
+</code></pre>
+<blockquote>
+<p>&#x901A;&#x8FC7;&#x5728;&#x6A21;&#x5757;&#x8BF7;&#x6C42;&#x524D;&#x6DFB;&#x52A0;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x6A21;&#x5757;&#x5C06;&#x4F1A;&#x88AB;&#x52A0;&#x8F7D;&#x5668;&#x7BA1;&#x9053;&#x5904;&#x7406;&#x3002;&#x8FD9;&#x4E9B;&#x52A0;&#x8F7D;&#x5668;&#x7279;&#x5B9A;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5904;&#x7406;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#xFF0C;&#x6700;&#x7EC8;&#x8F6C;&#x6362;&#x540E;&#x7684;&#x5185;&#x5BB9;&#x5C06;&#x662F;&#x4E00;&#x4E2A; javascript &#x6A21;&#x5757;&#x3002;</p>
+<p>&#x6CE8;&#xFF1A;&#x4E32;&#x8054;&#x8D77;&#x6765;&#x7684;&#x52A0;&#x8F7D;&#x5668;&#x5C06;&#x81EA;&#x53F3;&#x5411;&#x5DE6;&#x6267;&#x884C;&#x3002;</p>
+</blockquote>
+<hr>
+<h2 id="%E7%BB%91%E5%AE%9A%E5%8A%A0%E8%BD%BD%E5%99%A8">&#x7ED1;&#x5B9A;&#x52A0;&#x8F7D;&#x5668;</h2>
+<p>&#x6211;&#x4EEC;&#x5E76;&#x4E0D;&#x5E0C;&#x671B;&#x5199;&#x7C7B;&#x4F3C;&#x8FD9;&#x6837;&#x7684;&#x4EE3;&#x7801; <code>require(&quot;!style!css!./style.css&quot;);</code>&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7ED9;&#x6307;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x540E;&#x7F00;&#x7ED1;&#x5B9A;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x8FD9;&#x6837;&#x53EA;&#x9700;&#x8981;&#x5199; <code>require(&quot;./style.css&quot;)</code>&#x3002;</p>
+<p>&#x66F4;&#x65B0; <code>entry.js</code></p>
+<pre><code class="lang-diff"><span class="hljs-deletion">- require(&quot;!style!css!./style.css&quot;);</span>
+<span class="hljs-addition">+ require(&quot;./style.css&quot;);</span>
+  document.write(require(&quot;./content.js&quot;));
+</code></pre>
+<p>&#x7136;&#x540E;&#x8FD0;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x6765;&#x7F16;&#x8BD1;</p>
+<pre><code class="lang-bash">$ webpack ./entry.js bundle.js --module-bind <span class="hljs-string">&apos;css=style!css&apos;</span>
+</code></pre>
+<p>&#x5237;&#x65B0;&#x9875;&#x9762;&#xFF0C;&#x5C06;&#x770B;&#x5230;&#x540C;&#x6837;&#x7684;&#x6548;&#x679C;&#x3002;</p>
+<pre><code class="lang-html">It works from content.js.
+</code></pre>
+<hr>
+<h2 id="%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6">&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h2>
+<p>&#x628A;&#x914D;&#x7F6E;&#x9009;&#x9879;&#x79FB;&#x5230;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;</p>
+<p>&#x589E;&#x52A0; <code>webpack.config.js</code></p>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
+    entry: <span class="hljs-string">&quot;./entry.js&quot;</span>,
+    output: {
+        path: __dirname,
+        filename: <span class="hljs-string">&quot;bundle.js&quot;</span>
+    },
+    <span class="hljs-built_in">module</span>: {
+        loaders: [
+            { test: <span class="hljs-regexp">/\.css$/</span>, loader: <span class="hljs-string">&quot;style!css&quot;</span> }
+        ]
+    }
+};
+</code></pre>
+<p>&#x7136;&#x540E;&#x53EA;&#x9700;&#x6267;&#x884C; <code>webpak</code> &#x6765;&#x7F16;&#x8BD1;</p>
+<pre><code class="lang-bash">Hash: <span class="hljs-number">88</span>d0f4710a9d3a391d69
+Version: webpack <span class="hljs-number">1.9</span>.<span class="hljs-number">10</span>
+Time: <span class="hljs-number">263</span>ms
+    Asset     Size  Chunks             Chunk Names
+bundle.js  <span class="hljs-number">10.7</span> kB       <span class="hljs-number">0</span>  [emitted]  main
+   [<span class="hljs-number">0</span>] ./entry.js <span class="hljs-number">76</span> bytes {<span class="hljs-number">0</span>} [built]
+   [<span class="hljs-number">5</span>] ./content.js <span class="hljs-number">44</span> bytes {<span class="hljs-number">0</span>} [built]
+    + <span class="hljs-number">4</span> hidden modules
+</code></pre>
+<blockquote>
+<p>webpack &#x547D;&#x4EE4;&#x4F1A;&#x5C1D;&#x8BD5;&#x52A0;&#x8F7D;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x7684; <code>webpack.config.js</code> &#x6587;&#x4EF6;&#x3002;</p>
+</blockquote>
+<hr>
+<h2 id="%E6%9B%B4%E5%8F%8B%E5%A5%BD%E7%9A%84%E8%BE%93%E5%87%BA">&#x66F4;&#x53CB;&#x597D;&#x7684;&#x8F93;&#x51FA;</h2>
+<p>&#x5982;&#x679C;&#x9879;&#x76EE;&#x53D8;&#x5F97;&#x8D8A;&#x6765;&#x8D8A;&#x5927;&#xFF0C;&#x7F16;&#x8BD1;&#x8017;&#x65F6;&#x5C06;&#x4F1A;&#x8D8A;&#x6765;&#x8D8A;&#x957F;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x80FD;&#x591F;&#x5C55;&#x793A;&#x4E00;&#x4E9B;&#x8FDB;&#x5EA6;&#x6761;&#xFF0C;&#x540C;&#x65F6;&#x589E;&#x52A0;&#x989C;&#x8272;&#x2026;&#x2026;</p>
+<p>&#x8FD9;&#x4E9B;&#x9700;&#x6C42;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x6765;&#x5B9E;&#x73B0;</p>
+<pre><code class="lang-bash">$ webpack --progress --colors
+</code></pre>
+<hr>
+<h2 id="%E7%9B%91%E6%8E%A7%E6%A8%A1%E5%BC%8F">&#x76D1;&#x63A7;&#x6A21;&#x5F0F;</h2>
+<p>&#x6211;&#x4EEC;&#x5E76;&#x4E0D;&#x5E0C;&#x671B;&#x6BCF;&#x4E00;&#x4E2A;&#x53D8;&#x66F4;&#x90FD;&#x9700;&#x8981;&#x53BB;&#x624B;&#x52A8;&#x7F16;&#x8BD1;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x6765;&#x6539;&#x5584;&#x3002;</p>
+<pre><code class="lang-bash">$ webpack --progress --colors --watch
+</code></pre>
+<p>&#x8FD9;&#x6837;&#xFF0C;webpack &#x4F1A;&#x7F13;&#x5B58;&#x672A;&#x53D8;&#x66F4;&#x7684;&#x6A21;&#x5757;&#x800C;&#x8F93;&#x51FA;&#x53D8;&#x66F4;&#x7684;&#x6A21;&#x5757;&#x3002;</p>
+<blockquote>
+<p>&#x5F00;&#x542F; webpack &#x76D1;&#x63A7;&#x6A21;&#x5F0F;&#x540E;&#xFF0C;webpack &#x4F1A;&#x7ED9;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x6DFB;&#x52A0;&#x7528;&#x4E8E;&#x7F16;&#x8BD1;&#x7684;&#x6587;&#x4EF6;&#x76D1;&#x63A7;&#x3002;&#x5982;&#x679C;&#x6709;&#x4EFB;&#x4F55;&#x53D8;&#x66F4;&#xFF0C;&#x6C5F;&#x6E56;&#x89E6;&#x53D1;&#x7F16;&#x8BD1;&#x3002;&#x5F53;&#x7F13;&#x5B58;&#x5F00;&#x542F;&#x65F6;&#xFF0C;webpack &#x4F1A;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x4FDD;&#x5B58;&#x6240;&#x6709;&#x6A21;&#x5757;&#x5185;&#x5BB9;&#x5E76;&#x5728;&#x6CA1;&#x53D8;&#x66F4;&#x65F6;&#x76F4;&#x63A5;&#x91CD;&#x7528;&#x3002;</p>
+</blockquote>
+<hr>
+<h2 id="%E5%BC%80%E5%8F%91%E6%9C%8D%E5%8A%A1%E5%99%A8">&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;</h2>
+<p>&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x662F;&#x4E00;&#x4E2A;&#x66F4;&#x597D;&#x7684;&#x9009;&#x62E9;</p>
+<pre><code class="lang-bash">$ npm install webpack-dev-server -g
+</code></pre>
+<p>&#x7136;&#x540E;</p>
+<pre><code class="lang-bash">$ webpack-dev-server --progress --colors
+</code></pre>
+<p>&#x8FD9;&#x4F1A;&#x5728; localhost:8080 &#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5C0F;&#x7684; express &#x670D;&#x52A1;&#x5668;&#x6765;&#x63D0;&#x4F9B;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x4EE5;&#x53CA;&#x81EA;&#x52A8;&#x7F16;&#x8BD1;&#x7684;&#x5957;&#x4EF6;&#x3002;&#x5F53;&#x6709;&#x5957;&#x4EF6;&#x91CD;&#x65B0;&#x7F16;&#x8BD1;&#x540E;&#xFF0C;&#x4F1A;&#x901A;&#x8FC7; socket.io &#x6765;&#x81EA;&#x52A8;&#x66F4;&#x65B0;&#x6D4F;&#x89C8;&#x5668;&#x9875;&#x9762;&#x3002;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00;  <a href="http://localhost:8080/webpack-dev-server/bundle" target="_blank">http://localhost:8080/webpack-dev-server/bundle</a> &#x3002;</p>
+<blockquote>
+<p>&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;&#x4F7F;&#x7528;&#x4E86; webpack &#x76D1;&#x63A7;&#x6A21;&#x5F0F;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x963B;&#x6B62;&#x4E86; webpack &#x751F;&#x6210;&#x7ED3;&#x679C;&#x6587;&#x4EF6;&#x5230;&#x786C;&#x76D8;&#xFF0C;&#x800C;&#x662F;&#x76F4;&#x63A5;&#x901A;&#x8FC7;&#x5185;&#x5B58;&#x6765;&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#x3002;</p>
+</blockquote>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../troubleshooting.html" class="navigation navigation-prev " aria-label="Previous page: 疑难解答"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../list-tutorials.html" class="navigation navigation-next " aria-label="Next page: 教程列表"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

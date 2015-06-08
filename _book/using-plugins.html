@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="1.8" data-basepath="." data-revision="Tue Jun 02 2015 00:12:03 GMT+0800 (CST)">
+    <div class="book" data-level="1.8" data-basepath="." data-revision="Mon Jun 08 2015 18:49:40 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -221,9 +221,17 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1" data-path="tutorials/getting-started.html">
+        <li class="chapter " data-level="2.1" data-path="tutorials/getting-started/index.html">
             
-            <span><b>2.1.</b> 入门</span>
+                
+                    <a href="./tutorials/getting-started/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        入门
+                    </a>
+                
             
             
         </li>
@@ -462,7 +470,35 @@
                 
                     <section class="normal" id="section-">
                     
-                        
+                        <h1 id="%E4%BD%BF%E7%94%A8%E6%8F%92%E4%BB%B6">&#x4F7F;&#x7528;&#x63D2;&#x4EF6;</h1>
+<h2 id="%E5%86%85%E7%BD%AE%E6%8F%92%E4%BB%B6">&#x5185;&#x7F6E;&#x63D2;&#x4EF6;</h2>
+<p>&#x901A;&#x8FC7;&#x5728; webpack &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0; <code>plugins</code> &#x5B57;&#x6BB5;&#x6765;&#x7ED9;&#x6A21;&#x5757;&#x5F15;&#x5165;&#x63D2;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// webpack should be in the node_modules directory, install if not.</span>
+<span class="hljs-keyword">var</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;webpack&quot;</span>);
+
+<span class="hljs-built_in">module</span>.exports = {
+    plugins: [
+        <span class="hljs-keyword">new</span> webpack.ResolverPlugin([
+            <span class="hljs-keyword">new</span> webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(<span class="hljs-string">&quot;bower.json&quot;</span>, [<span class="hljs-string">&quot;main&quot;</span>])
+        ], [<span class="hljs-string">&quot;normal&quot;</span>, <span class="hljs-string">&quot;loader&quot;</span>])
+    ]
+};
+</code></pre>
+<h2 id="%E5%85%B6%E5%AE%83%E6%8F%92%E4%BB%B6">&#x5176;&#x5B83;&#x63D2;&#x4EF6;</h2>
+<p>&#x5176;&#x5B83;&#x975E;&#x5185;&#x7F6E;&#x63D2;&#x4EF6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>npm</code> &#x6216;&#x522B;&#x7684;&#x53EF;&#x7528;&#x65B9;&#x5F0F;&#x6765;&#x5B89;&#x88C5;&#x3002;</p>
+<pre><code class="lang-bash">npm install component-webpack-plugin
+</code></pre>
+<p>&#x7136;&#x540E;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> ComponentPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;component-webpack-plugin&quot;</span>);
+<span class="hljs-built_in">module</span>.exports = {
+    plugins: [
+        <span class="hljs-keyword">new</span> ComponentPlugin();
+    ]
+}
+</code></pre>
+<h2 id="%E6%9B%B4%E5%A4%9A">&#x66F4;&#x591A;</h2>
+<p>[&#x63D2;&#x4EF6;&#x5217;&#x8868;][list-of-plgins]</p>
+
                     
                     </section>
                 
