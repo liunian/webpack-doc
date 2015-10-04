@@ -32,7 +32,7 @@
 
 可以通过全称（实际的名称）来引用加载器（如 `json-loader`），也可以通过简略名来引用（如 `json`）。
 
-加载器的命名惯例和搜索优先级是通过 wbpack 的配置 api `resolveLoader.moduleTemplate` 来指定的。
+加载器的命名惯例和搜索优先级是通过 webpack 的配置 api `resolveLoader.moduleTemplate` 来指定的。
 
 参考下面的用法，可以看到加载器命名惯例很有用，尤其是通过 `require()` 语句来引用加载器时。
 

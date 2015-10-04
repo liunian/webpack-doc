@@ -37,7 +37,7 @@ webpack 本身只支持处理 JavaScript，但可以通过加载器来把别的�
 
 ### 智能解析
 
-webpack 有一个基本支持所有第三方库的只能解析器，甚至还支持带有表达式的依赖表述法，如 `require("./templates/" + name + ".jade")`。支持最常用的 [CommonJs][CommonJs] 和 [AMD][AMD] 这两种模块风格。
+webpack 有一个基本支持所有第三方库的智能解析器，甚至还支持带有表达式的依赖表述法，如 `require("./templates/" + name + ".jade")`。支持最常用的 [CommonJs][CommonJs] 和 [AMD][AMD] 这两种模块风格。
 
 更多参考[含有表达式的依赖表述][context]、[CommonJs][CommonJs] 和 [AMD][AMD]。
 
