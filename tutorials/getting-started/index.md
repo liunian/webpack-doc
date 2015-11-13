@@ -116,7 +116,7 @@ It works from content.js.
 
 创建一个空白的 `node_modules` 目录。
 
-执行 `npm install css-loadr stle-loader` 来安装加载器。（因为需要安装在当前应用，所以不需要 `-g` 参数）
+执行 `npm install css-loadr style-loader` 来安装加载器。（因为需要安装在当前应用，所以不需要 `-g` 参数）
 
 然后具体使用
 
@@ -227,7 +227,7 @@ $ webpack --progress --colors --watch
 
 这样，webpack 会缓存未变更的模块而输出变更的模块。
 
-> 开启 webpack 监控模式后，webpack 会给所有文件添加用于编译的文件监控。如果有任何变更，江湖触发编译。当缓存开启时，webpack 会在内存中保存所有模块内容并在没变更时直接重用。
+> 开启 webpack 监控模式后，webpack 会给所有文件添加用于编译的文件监控。如果有任何变更，将会触发编译。当缓存开启时，webpack 会在内存中保存所有模块内容并在没变更时直接重用。
 
 -----
 
