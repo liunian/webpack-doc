@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>安装 | webpack</title>
+        <title>AMD | webpack</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.1">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="./usage.html" />
+    <link rel="next" href="./webpack-for-browserify-users.html" />
     
     
-    <link rel="prev" href="./what-is-webpack.html" />
+    <link rel="prev" href="./commonjs.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="1.3" data-basepath="." data-revision="Wed Jan 13 2016 18:02:47 GMT+0800 (CST)">
+    <div class="book" data-level="3.2" data-basepath="." data-revision="Wed Jan 13 2016 18:02:47 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -104,7 +104,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3" data-path="installation.html">
+        <li class="chapter " data-level="1.3" data-path="installation.html">
             
                 
                     <a href="./installation.html">
@@ -294,7 +294,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="amd.html">
+        <li class="chapter active" data-level="3.2" data-path="amd.html">
             
                 
                     <a href="./amd.html">
@@ -1006,30 +1006,65 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="%E5%AE%89%E8%A3%85">&#x5B89;&#x88C5;</h1>
-<h2 id="node-js">node.js</h2>
-<p>&#x5B89;&#x88C5; <a href="http://nodejs.org" target="_blank">node.js</a>&#x3002;</p>
-<p>&#x5176;&#x4E2D;&#xFF0C;node.js &#x5185;&#x7F6E;&#x4E86;&#x4E00;&#x4E2A;&#x53EB;&#x505A; <code>npm</code> &#x7684;&#x5305;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#x3002;</p>
-<h2 id="webpack">webpack</h2>
-<p>&#x901A;&#x8FC7; <code>npm</code> &#x5B89;&#x88C5; webpack&#xFF1A;</p>
-<pre><code class="lang-bash">$ npm install webpack -g
+                        <h1 id="amd">AMD</h1>
+<p>AMD&#xFF08;&#x5F02;&#x6B65;&#x6A21;&#x5757;&#x5B9A;&#x4E49;&#xFF09;&#x662F;&#x5BF9; &#x5929;&#x751F;&#x540C;&#x6B65;&#x7684; CommonJS &#x6A21;&#x5757;&#x7CFB;&#x7EDF;&#x4E0D;&#x9002;&#x5408;&#x6D4F;&#x89C8;&#x5668;&#x73AF;&#x5883;&#x7684;&#x56DE;&#x5E94;&#x3002;</p>
+<p>AMD &#x5B9A;&#x4E49;&#x4E86;&#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x5F02;&#x6B65;&#x52A0;&#x8F7D;&#x5176;&#x4F9D;&#x8D56;&#x7684;&#x6A21;&#x5757;&#x6807;&#x51C6;&#xFF0C;&#x89E3;&#x51B3;&#x4E86;&#x540C;&#x6B65;&#x52A0;&#x8F7D;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<h2 id="%E8%A7%84%E8%8C%83">&#x89C4;&#x8303;</h2>
+<p>&#x6A21;&#x5757;&#x901A;&#x8FC7; <code>define</code> &#x51FD;&#x6570;&#x6765;&#x5B9A;&#x4E49;&#x3002;</p>
+<h3 id="-define"><code>define</code></h3>
+<p>&#x4E0B;&#x9762;&#x7684; <code>define</code> &#x51FD;&#x6570;&#x5C31;&#x662F; AMD &#x4E2D;&#x6A21;&#x5757;&#x7684;&#x5B9A;&#x4E49;&#x5F62;&#x5F0F;&#xFF0C;&#x5B83;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x6709;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-js">define(id?: <span class="hljs-built_in">String</span>, dependencies?: <span class="hljs-built_in">String</span>[], factory: <span class="hljs-built_in">Function</span>|<span class="hljs-built_in">Object</span>);
 </code></pre>
-<p>&#x8FD9;&#x6837;&#xFF0C;webpack &#x5C06;&#x88AB;&#x5B89;&#x88C5;&#x4E3A;&#x5168;&#x5C40;&#x5DE5;&#x5177;&#xFF0C;&#x540C;&#x65F6;&#xFF0C;&#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A; <code>webpack</code> &#x7684;&#x547D;&#x4EE4;&#x3002;</p>
-<h2 id="%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E4%BD%BF%E7%94%A8-webpack">&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528; webpack</h2>
-<p>&#x6700;&#x597D;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x628A; webpack &#x4F5C;&#x4E3A;&#x9879;&#x76EE;&#x7684;&#x4F9D;&#x8D56;&#xFF0C;&#x8FD9;&#x6837;&#xFF0C;&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x81EA;&#x5DF1;&#x6240;&#x9700;&#x8981;&#x7684;&#x7248;&#x672C;&#x800C;&#x4E0D;&#x5FC5;&#x4F9D;&#x8D56;&#x4E8E;&#x5168;&#x5C40;&#x7684; webpack&#x3002;</p>
-<p>&#x901A;&#x8FC7; <code>npm</code> &#x6765;&#x589E;&#x52A0;&#x4E00;&#x4E2A; <code>package.json</code> &#x6587;&#x4EF6;&#xFF1A;</p>
-<pre><code class="lang-bash">$ npm init
+<h4 id="-id"><code>id</code></h4>
+<p>&#x6A21;&#x5757;&#x6807;&#x8BC6;&#xFF0C;&#x53EF;&#x9009;&#x3002;</p>
+<h4 id="-dependencies"><code>dependencies</code></h4>
+<p>&#x5F53;&#x524D;&#x6A21;&#x5757;&#x6240;&#x4F9D;&#x8D56;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x5177;&#x4F53;&#x662F;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x662F;&#x6A21;&#x5757;&#x6807;&#x8BC6;&#x7684;&#x6570;&#x7EC4;&#x3002;&#x53EF;&#x9009;&#xFF0C;&#x4E0D;&#x586B;&#x65F6;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F; <code>[&quot;require&quot;, &quot;exports&quot;, &quot;module&quot;]</code>&#x3002;</p>
+<h4 id="-factory"><code>factory</code></h4>
+<p>&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x6A21;&#x5757;&#x5B9E;&#x4F53;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF08;&#x53EA;&#x8C03;&#x7528;&#x4E00;&#x6B21;&#xFF09;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;&#x5F53; <code>factory</code> &#x662F;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x503C;&#x8BB2;&#x5E08;&#x6A21;&#x5757;&#x5BF9;&#x5916;&#x63D0;&#x4F9B;&#x7684;&#x503C;&#x3002;</p>
+<h2 id="%E7%A4%BA%E4%BE%8B">&#x793A;&#x4F8B;</h2>
+<p>&#x6765;&#x770B;&#x770B;&#x51E0;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<h3 id="%E5%91%BD%E5%90%8D%E6%A8%A1%E5%9D%97">&#x547D;&#x540D;&#x6A21;&#x5757;</h3>
+<p>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x4F9D;&#x8D56;&#x4E8E; <code>jQuery</code> &#x7684;&#x540D;&#x4E3A; <code>myModule</code> &#x7684;&#x6A21;&#x5757;&#x3002;</p>
+<pre><code class="lang-js">define(<span class="hljs-string">&apos;myModule&apos;</span>, [<span class="hljs-string">&apos;jquery&apos;</span>], <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">($)</span> </span>{
+    <span class="hljs-comment">// $ is the export of the jquery module.</span>
+    $(<span class="hljs-string">&apos;body&apos;</span>).text(<span class="hljs-string">&apos;hello world&apos;</span>);
+});
+<span class="hljs-comment">// and use it</span>
+define([<span class="hljs-string">&apos;myModule&apos;</span>], <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(myModule)</span> </span>{});
 </code></pre>
-<p>&#x5982;&#x679C;&#x4E0D;&#x628A;&#x9879;&#x76EE;&#x53D1;&#x5E03;&#x5230; npm &#x4E0A;&#xFF0C;&#x4E0A;&#x8FF0;&#x547D;&#x4EE4;&#x4E2D;&#x8981;&#x6C42;&#x56DE;&#x7B54;&#x7684;&#x95EE;&#x9898;&#x7684;&#x7B54;&#x6848;&#x5219;&#x4E0D;&#x662F;&#x5F88;&#x91CD;&#x8981;&#x3002;</p>
-<p>&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x6765;&#x5B89;&#x88C5; <code>webpack</code> &#x5E76;&#x628A;&#x5176;&#x6DFB;&#x52A0;&#x5230; <code>packeage.json</code> &#x4E2D;&#xFF1A;</p>
-<pre><code class="lang-bash">$ npm install webpack --save-dev
+<blockquote>
+<p>&#x6CE8;&#xFF1A;&#x5728; webpack &#x4E2D;&#xFF0C;&#x4E00;&#x4E2A;&#x547D;&#x540D;&#x6A21;&#x5757;&#x4EC5;&#x5C40;&#x90E8;&#x53EF;&#x7528;&#x3002;&#x5728; Require.js &#x4E2D;&#xFF0C;&#x5219;&#x662F;&#x5168;&#x5C40;&#x53EF;&#x7528;&#x3002;</p>
+</blockquote>
+<h3 id="%E5%8C%BF%E5%90%8D%E6%A8%A1%E5%9D%97">&#x533F;&#x540D;&#x6A21;&#x5757;</h3>
+<p>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x4E0D;&#x6307;&#x5B9A;&#x6807;&#x8BC6;&#x7684;&#x6A21;&#x5757;</p>
+<pre><code class="lang-js">define([<span class="hljs-string">&apos;jquery&apos;</span>], <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">($)</span> </span>{
+    $(<span class="hljs-string">&apos;body&apos;</span>).text(<span class="hljs-string">&apos;hello world&apos;</span>);
+});
 </code></pre>
-<h2 id="%E7%89%88%E6%9C%AC">&#x7248;&#x672C;</h2>
-<p>webpack &#x6709;&#x7A33;&#x5B9A;&#x7248;&#x548C; beta &#x7248;&#x4E24;&#x4E2A;&#x53EF;&#x7528;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x5176;&#x4E2D;&#xFF0C;beta &#x7248;&#x672C;&#x5728;&#x7248;&#x672C;&#x53F7;&#x4E2D;&#x6DFB;&#x52A0;&#x4E86; <code>-beta</code> &#x7684;&#x6807;&#x8BC6;&#x3002;beta &#x7248;&#x672C;&#x53EF;&#x80FD;&#x5E26;&#x6709;&#x5F88;&#x591A;&#x4E0D;&#x7A33;&#x5B9A;&#x53D8;&#x66F4;&#x6216;&#x5B9E;&#x9A8C;&#x6027;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5E76;&#x4E14;&#x672A;&#x5B8C;&#x5168;&#x6D4B;&#x8BD5;&#x3002;&#x53EF;&#x67E5;&#x770B;<a href="changelog.html">&#x53D8;&#x66F4;&#x8BB0;&#x5F55;</a>&#x6765;&#x770B;&#x5404;&#x7248;&#x672C;&#x7684;&#x5DEE;&#x522B;&#x3002;&#x6B63;&#x5F0F;&#x9879;&#x76EE;&#x4E2D;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;&#x7A33;&#x5B9A;&#x7248;&#x672C;&#x3002;</p>
-<pre><code class="lang-bash">$ npm install webpack@<span class="hljs-number">1.2</span>.x --save-dev
+<h3 id="%E5%A4%9A%E4%B8%AA%E4%BE%9D%E8%B5%96">&#x591A;&#x4E2A;&#x4F9D;&#x8D56;</h3>
+<p>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x4F9D;&#x8D56;&#x4E8E;&#x591A;&#x4E2A;&#x6A21;&#x5757;&#x7684;&#x6A21;&#x5757;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x6BCF;&#x4E2A;&#x4F9D;&#x8D56;&#x6A21;&#x5757;&#x7684;&#x5BFC;&#x51FA;&#x503C;&#x90FD;&#x4F1A;&#x88AB;&#x4F20;&#x5165;&#x5230;&#x5DE5;&#x5382;&#x51FD;&#x6570;&#x4E2D;&#x3002;</p>
+<pre><code class="lang-js">define([<span class="hljs-string">&apos;jquery&apos;</span>, <span class="hljs-string">&apos;./math.js&apos;</span>], <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">($, math)</span> </span>{
+    <span class="hljs-comment">// $ and math are the exports of the jquery module.</span>
+    $(<span class="hljs-string">&apos;body&apos;</span>).text(<span class="hljs-string">&apos;hello world&apos;</span>);
+});
 </code></pre>
-<h2 id="%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB">&#x5EF6;&#x4F38;&#x9605;&#x8BFB;</h2>
-<p>&#x66F4;&#x591A;&#x53EF;&#x9605;&#x8BFB;<a href="usage.html">&#x4F7F;&#x7528;</a>&#x3002;</p>
+<h3 id="%E5%AF%BC%E5%87%BA%E5%80%BC">&#x5BFC;&#x51FA;&#x503C;</h3>
+<p>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5BFC;&#x51FA;&#x5176;&#x672C;&#x8EAB;&#x7684;&#x6A21;&#x5757;</p>
+<pre><code class="lang-js">define([<span class="hljs-string">&apos;jquery&apos;</span>], <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">($)</span> </span>{
+
+    <span class="hljs-keyword">var</span> HelloWorldize = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(selector)</span></span>{
+        $(selector).text(<span class="hljs-string">&apos;hello world&apos;</span>);
+    };
+
+    <span class="hljs-keyword">return</span> HelloWorldize;
+});
+</code></pre>
+<h3 id="%E4%BD%BF%E7%94%A8-require-%E5%8A%A0%E8%BD%BD%E4%BE%9D%E8%B5%96">&#x4F7F;&#x7528; require &#x52A0;&#x8F7D;&#x4F9D;&#x8D56;</h3>
+<pre><code class="lang-js">define(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(require)</span> </span>{
+    <span class="hljs-keyword">var</span> $ = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;jquery&apos;</span>);
+    $(<span class="hljs-string">&apos;body&apos;</span>).text(<span class="hljs-string">&apos;hello world&apos;</span>);
+});
+</code></pre>
 
                     
                     </section>
@@ -1040,10 +1075,10 @@
         </div>
 
         
-        <a href="./what-is-webpack.html" class="navigation navigation-prev " aria-label="Previous page: webpack 是什么"><i class="fa fa-angle-left"></i></a>
+        <a href="./commonjs.html" class="navigation navigation-prev " aria-label="Previous page: CommonJs"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="./usage.html" class="navigation navigation-next " aria-label="Next page: 用法"><i class="fa fa-angle-right"></i></a>
+        <a href="./webpack-for-browserify-users.html" class="navigation navigation-next " aria-label="Next page: 从 browserify 切换到 webpack"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
