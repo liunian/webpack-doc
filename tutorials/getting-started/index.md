@@ -116,7 +116,7 @@ It works from content.js.
 
 创建一个空白的 `node_modules` 目录。
 
-执行 `npm install css-loadr style-loader` 来安装加载器。（因为需要安装在当前应用，所以不需要 `-g` 参数）
+执行 `npm install css-loader style-loader` 来安装加载器。（因为需要安装在当前应用，所以不需要 `-g` 参数）
 
 然后具体使用
 
