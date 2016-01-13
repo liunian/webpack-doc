@@ -21,7 +21,7 @@
 $ npm install webpack -g
 ```
 
-> 上面命令确保可以在命令行中使用 webpack 命令 
+> 上面命令确保可以在命令行中使用 webpack 命令
 
 -----
 
@@ -101,7 +101,7 @@ $ webpack ./entry.js bundle.js
 刷新浏览器，可以看到内容变为 `It works from content.js.`。
 
 ```html
-It works from content.js. 
+It works from content.js.
 ```
 
 > webpack 会分析入口文件（entry.js）来找寻依赖文件。这些文件（又称之为模块）会包括到 `bundle.js` 中。webpack 会给每个模块一个唯一的 id，然后在 `bundle.js` 中通过该 id 来访问对应的模块。启动时，只会执行入口模块。一个短小的运行时提供了 `require` 函数，在引用模块时会执行依赖模块。
@@ -116,7 +116,7 @@ It works from content.js.
 
 创建一个空白的 `node_modules` 目录。
 
-执行 `npm install css-loadr stle-loader` 来安装加载器。（因为需要安装在当前应用，所以不需要 `-g` 参数）
+执行 `npm install css-loadr style-loader` 来安装加载器。（因为需要安装在当前应用，所以不需要 `-g` 参数）
 
 然后具体使用
 
@@ -227,7 +227,7 @@ $ webpack --progress --colors --watch
 
 这样，webpack 会缓存未变更的模块而输出变更的模块。
 
-> 开启 webpack 监控模式后，webpack 会给所有文件添加用于编译的文件监控。如果有任何变更，江湖触发编译。当缓存开启时，webpack 会在内存中保存所有模块内容并在没变更时直接重用。
+> 开启 webpack 监控模式后，webpack 会给所有文件添加用于编译的文件监控。如果有任何变更，将会触发编译。当缓存开启时，webpack 会在内存中保存所有模块内容并在没变更时直接重用。
 
 -----
 
@@ -247,7 +247,7 @@ $ webpack-dev-server --progress --colors
 
 这会在 localhost:8080 提供一个小的 express 服务器来提供静态资源以及自动编译的套件。当有套件重新编译后，会通过 socket.io 来自动更新浏览器页面。在浏览器中打开  http://localhost:8080/webpack-dev-server/bundle 。
 
-> 开发服务器使用了 webpack 监控模式，同时也阻止了 webpack 生成结果文件到硬盘，而是直接通过内存来提供服务。
+> webpack-dev-server 使用了 webpack 监控模式，同时也阻止了 webpack 生成结果文件到硬盘，而是直接通过内存来提供服务。
 
 
 [node.js]: http://nodejs.org/

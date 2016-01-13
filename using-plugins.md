@@ -38,6 +38,6 @@ module.exports = {
 
 ## 更多
 
-[插件列表][list-of-plgins]
+[插件列表][list-of-plugins]
 
 [list-of-plugins]: ./list-of-plugins.md
