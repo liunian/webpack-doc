@@ -188,7 +188,7 @@ module.exports = {
 };
 ```
 
-然后只需执行 `webpak` 来编译
+然后只需执行 `webpack` 来编译
 
 ```bash
 Hash: 88d0f4710a9d3a391d69
