@@ -37,7 +37,7 @@ AMD 规范使用下面的方式定义了一个异步的 `require` 方法：
 require(dependencies, callback)
 ```
 
-调用时会加载所有的依赖模块，病把它们作为 `callback` 的实参来传递进去，如：
+调用时会加载所有的依赖模块，并把它们作为 `callback` 的实参来传递进去，如：
 
 ```js
 require(['module-a', 'module-b'], function(a, b) {
