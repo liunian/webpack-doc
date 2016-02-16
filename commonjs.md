@@ -6,7 +6,7 @@ CommonJS 工作组通过定义一种模块格式来解决 JavaScript 作用域�
 
 为了这一目的，CommonJS 提供了两个工具：
 
-1. `requre` 函数，这允许把别的模块引入到当前作用域
+1. `require` 函数，这允许把别的模块引入到当前作用域
 2. `module` 对象，用于从当前作用域导出数据
 
 下面是一个符合规范的 hello world 例子。
