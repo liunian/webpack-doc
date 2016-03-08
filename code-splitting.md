@@ -101,7 +101,7 @@ module.exports = {
 
 这将会把 `vendor` 分块中的所有模块从 `app` 分块中移除，然后 `bundle.js` 将只包含应用代码，而把依赖的第三方代码置于 `vendor.bundle.js`。
 
-再 html 页面中，再加载 `bundle.js` 前先加载 `vendor.bundle.js`。
+在 html 页面中，在加载 `bundle.js` 前先加载 `vendor.bundle.js`。
 
 ```html
 <script src="vendor.bundle.js"></script>
