@@ -1,82 +1,63 @@
-# 示例
+#一、简单示例
 
-## simple examples
+##1.基本用法
+- [CommonJS](https://github.com/webpack/webpack/tree/master/examples/commonjs)
 
-### Basic usage
+##2.代码分离
+- [代码分离](https://github.com/webpack/webpack/tree/master/examples/code-splitting)
+- [使用bundle－loader来进行代码分离](https://github.com/webpack/webpack/tree/master/examples/code-splitting-bundle-loader)
 
-[CommonsJs](https://github.com/webpack/webpack/tree/master/examples/commonjs)
+##3.多入口
+- [多入口](https://github.com/webpack/webpack/tree/master/examples/multiple-entry-points)
 
-### Code Splitting
+##4.模块风格
+- [标签式模块](https://github.com/webpack/webpack/tree/master/examples/labeled-modules)
+- [标签式模块与CommonJS模块、AMD模块的混合](https://github.com/webpack/webpack/tree/master/examples/mixed)
+- [组件模块](https://github.com/webpack/webpack/tree/master/examples/component)
 
-- [Code Splitting](https://github.com/webpack/webpack/tree/master/examples/code-splitting)
-- [Code Splitting with the bundle-loader](https://github.com/webpack/webpack/tree/master/examples/code-splitting-bundle-loader)
+##5.库和额外资源
+- [使用多入口和UMD来配置第三方库](https://github.com/webpack/webpack/tree/master/examples/multi-part-library)
+- [依赖其他脚本](https://github.com/webpack/webpack/tree/master/examples/externals)
 
-### multiple entry points
+##6.加载器
+- [使用加载器](https://github.com/webpack/webpack/tree/master/examples/loader)
+- [使用coffee-script](https://github.com/webpack/webpack/tree/master/examples/coffee-script)
 
-[multiple entry points](https://github.com/webpack/webpack/tree/master/examples/multiple-entry-points)
+##7.环境
+- [动态加载](https://github.com/webpack/webpack/tree/master/examples/require.context)
+- [动态加载代码块](https://github.com/webpack/webpack/tree/master/examples/code-splitted-require.context)
+- [动态加载代码块(AMD)](https://github.com/webpack/webpack/tree/master/examples/code-splitted-require.context-amd)
+- 待定：动态加载每一个模块
 
-### module styles
+##8.国际化
+- [使用i18n插件](https://github.com/webpack/webpack/tree/master/examples/i18n)
 
-- [labeled modules](https://github.com/webpack/webpack/tree/master/examples/labeled-modules)
-- [CommonsJs, AMD and labeled modules mixed](https://github.com/webpack/webpack/tree/master/examples/mixed)
-- [Component modules](https://github.com/webpack/webpack/tree/master/examples/component)
-
-### library and externals
-
-- [library option with multiple entry points and UMD](https://github.com/webpack/webpack/tree/master/examples/multi-part-library)
-- [using stuff from other scripts](https://github.com/webpack/webpack/tree/master/examples/externals)
-
-### loaders
-
-- [using loaders](https://github.com/webpack/webpack/tree/master/examples/loader)
-- [using coffee-script](https://github.com/webpack/webpack/tree/master/examples/coffee-script)
-
-### context
-
-- [dynamic require](https://github.com/webpack/webpack/tree/master/examples/require.context)
-- [dynamic require with a single chunk](https://github.com/webpack/webpack/tree/master/examples/code-splitted-require.context)
-- [dynamic require with a single chunk (AMD)](https://github.com/webpack/webpack/tree/master/examples/code-splitted-require.context-amd)
-- TODO: dynamic require with a chunk per module
-
-###i18n
-
-- [using the i18n plugin](https://github.com/webpack/webpack/tree/master/examples/i18n)
-
-## advanced examples
-
-### advanced CommonsJs
-
+#二、高级示例
+##1.CommonJS高级用法
 - [require.resolve](https://github.com/webpack/webpack/tree/master/examples/require.resolve)
 
-### advanced Code Splitting
+##2.代码分离高级用法
+- [代码块合并冲突](https://github.com/webpack/webpack/tree/master/examples/agressive-merging)
+- [在代码块中转移模块](https://github.com/webpack/webpack/tree/master/examples/move-to-parent)
+- [使用多入口和代码分离来路由](https://github.com/webpack/webpack/tree/master/examples/hybrid-routing)
 
-- [aggressive merging of chunks](https://github.com/webpack/webpack/tree/master/examples/agressive-merging)
-- [moving modules between chunks](https://github.com/webpack/webpack/tree/master/examples/move-to-parent)
-- [routing with multiple entry points and Code Splitting](https://github.com/webpack/webpack/tree/master/examples/hybrid-routing)
+##3.多种编译
+- [使用多个配置文件](https://github.com/webpack/webpack/tree/master/examples/multi-compiler)
 
-### multi compiler
+##4.代码压缩
+- [使用代码压缩插件](https://github.com/webpack/webpack/tree/master/examples/dedupe)
+- [使用代码分离来来压缩](https://github.com/webpack/webpack/tree/master/examples/code-splitted-dedupe)
 
-- [using multiple configurations](https://github.com/webpack/webpack/tree/master/examples/multi-compiler)
+##5.代码块共享
+- [代码块共享](https://github.com/webpack/webpack/tree/master/examples/multiple-commons-chunks)
 
-### deduplication
+##6.样式
+- [从CSS模块中提取样式](https://github.com/webpack/webpack/tree/master/examples/css-bundle)
+- [代码分离](https://github.com/webpack/webpack/tree/master/examples/code-splitted-css-bundle)
+- [代码块共享](https://github.com/webpack/webpack/tree/master/examples/multiple-entry-points-commons-chunk-css-bundle)
 
-- [using the deduplication plugin](https://github.com/webpack/webpack/tree/master/examples/dedupe)
-- [deduplication with Code Splitting](https://github.com/webpack/webpack/tree/master/examples/code-splitted-dedupe)
+##7.WebWorker
+- [使用webworker-loader](https://github.com/webpack/webpack/tree/master/examples/web-worker)
 
-### commons chunk plugin
-
-- [using the a commons chunk](https://github.com/webpack/webpack/tree/master/examples/multiple-commons-chunks)
-
-### stylesheet
-
-- [extracting a stylesheet for the css modules](https://github.com/webpack/webpack/tree/master/examples/css-bundle)
-- [+Code Splitting](https://github.com/webpack/webpack/tree/master/examples/code-splitted-css-bundle)
-- [+ commons chunk](https://github.com/webpack/webpack/tree/master/examples/multiple-entry-points-commons-chunk-css-bundle)
-
-### WebWorker
-
-- [using the webworker-loader](https://github.com/webpack/webpack/tree/master/examples/web-worker)
-
-### named chunks
-
-- [merging chunks with naming](https://github.com/webpack/webpack/tree/master/examples/named-chunks)
+##8.命名的代码块
+- [合并命名的代码块](https://github.com/webpack/webpack/tree/master/examples/named-chunks)
