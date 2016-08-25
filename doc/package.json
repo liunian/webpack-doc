@@ -4,7 +4,7 @@
   "description": "webpack 非官方文档，个人学习用",
   "scripts": {
     "serve": "gitbook serve",
-    "build": "gitbook build"
+    "build": "gitbook build ./ doc"
   },
   "repository": {
     "type": "git",
