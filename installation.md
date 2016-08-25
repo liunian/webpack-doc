@@ -42,6 +42,14 @@ webpack 有稳定版和 beta 版两个可用的版本，其中，beta 版本在�
 $ npm install webpack@1.2.x --save-dev
 ```
 
+## 开发工具
+
+如果需要使用开发工具，你应该先安装`webpack-dev-server`:
+
+```bash
+$ npm install webpack-dev-server --save-dev
+```
+
 ## 延伸阅读
 
 更多可阅读[使用][usage]。
