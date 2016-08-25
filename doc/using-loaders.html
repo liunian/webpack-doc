@@ -1,0 +1,1134 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>使用加载器 | webpack</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="./using-plugins.html" />
+    
+    
+    <link rel="prev" href="./usage.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="1.7" data-basepath="." data-revision="Thu Aug 25 2016 18:15:20 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        webpack
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> 入门</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="motivation.html">
+            
+                
+                    <a href="./motivation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        动机
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="what-is-webpack.html">
+            
+                
+                    <a href="./what-is-webpack.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        webpack 是什么
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="installation.html">
+            
+                
+                    <a href="./installation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        安装
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="usage.html">
+            
+                
+                    <a href="./usage.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        用法
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+            <span><b>1.5.</b> 引用模块</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+            <span><b>1.6.</b> Vendor Modules</span>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="using-loaders.html">
+            
+                
+                    <a href="./using-loaders.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        使用加载器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="using-plugins.html">
+            
+                
+                    <a href="./using-plugins.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        使用插件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="dev-tools.html">
+            
+                
+                    <a href="./dev-tools.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        开发工具
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="troubleshooting.html">
+            
+                
+                    <a href="./troubleshooting.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        疑难解答
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> 教程及示例</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="tutorials/getting-started/index.html">
+            
+                
+                    <a href="./tutorials/getting-started/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        入门
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="list-tutorials.html">
+            
+                
+                    <a href="./list-tutorials.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        教程列表
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="examples.html">
+            
+                
+                    <a href="./examples.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        示例
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 指南</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="commonjs.html">
+            
+                
+                    <a href="./commonjs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        CommonJs
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="amd.html">
+            
+                
+                    <a href="./amd.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        AMD
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="webpack-for-browserify-users.html">
+            
+                
+                    <a href="./webpack-for-browserify-users.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        从 browserify 切换到 webpack
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="code-splitting.html">
+            
+                
+                    <a href="./code-splitting.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        代码分离
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="stylesheets.html">
+            
+                
+                    <a href="./stylesheets.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        样式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="optimization.html">
+            
+                
+                    <a href="./optimization.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        优化
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="long-term-caching.html">
+            
+                
+                    <a href="./long-term-caching.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        持久缓存
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="how-to-write-a-loader.html">
+            
+                
+                    <a href="./how-to-write-a-loader.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        编写加载器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="multiple-entry-points.html">
+            
+                
+                    <a href="./multiple-entry-points.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        多入口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="library-and-externals.html">
+            
+                
+                    <a href="./library-and-externals.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        库和第三方代码
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="shimming-modules.html">
+            
+                
+                    <a href="./shimming-modules.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.11.</b>
+                        
+                        Shimming modules
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="testing.html">
+            
+                
+                    <a href="./testing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.12.</b>
+                        
+                        测试
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="build-performance.html">
+            
+                
+                    <a href="./build-performance.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.13.</b>
+                        
+                        构建的性能
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="hot-module-replacement-with-webpack.html">
+            
+                
+                    <a href="./hot-module-replacement-with-webpack.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.14.</b>
+                        
+                        用 webpack 来做模块热更新
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15" data-path="comparison.html">
+            
+                
+                    <a href="./comparison.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.15.</b>
+                        
+                        对比
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 搭配工具</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="usage-with-grunt.html">
+            
+                
+                    <a href="./usage-with-grunt.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        grunt
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="usage-with-gulp.html">
+            
+                
+                    <a href="./usage-with-gulp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        gulp
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="usage-with-bower.html">
+            
+            <span><b>4.3.</b> bower</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="usage-with-karma.html">
+            
+                
+                    <a href="./usage-with-karma.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        karma
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> 资源列表</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="loader-conventions.html">
+            
+                
+                    <a href="./loader-conventions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        加载器惯例
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="list-of-loaders.html">
+            
+                
+                    <a href="./list-of-loaders.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        加载器列表
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="list-of-plugins.html">
+            
+                
+                    <a href="./list-of-plugins.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        插件列表
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="list-of-tutorials.html">
+            
+                
+                    <a href="./list-of-tutorials.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        指南列表
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> API</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="configuration.html">
+            
+                
+                    <a href="./configuration.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        配置
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="cli.html">
+            
+                
+                    <a href="./cli.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        命令行
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="node.js-api.html">
+            
+                
+                    <a href="./node.js-api.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Node.js API
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="api-in-modules.html">
+            
+                
+                    <a href="./api-in-modules.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        模块中的 API
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="loaders.html">
+            
+                
+                    <a href="./loaders.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        加载器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="plugins.html">
+            
+                
+                    <a href="./plugins.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        插件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="context.html">
+            
+                
+                    <a href="./context.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        上下文环境
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="resolving.html">
+            
+                
+                    <a href="./resolving.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                        解析
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="hot-module-replacement.html">
+            
+                
+                    <a href="./hot-module-replacement.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.9.</b>
+                        
+                        模块热更新
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" >
+            
+            <span><b>6.10.</b> 开发工具</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.10.1" data-path="webpack-dev-server.html">
+            
+                
+                    <a href="./webpack-dev-server.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.10.1.</b>
+                        
+                        webpack 开发服务器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10.2" data-path="webpack-dev-middleware.html">
+            
+                
+                    <a href="./webpack-dev-middleware.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.10.2.</b>
+                        
+                        webpack 开发服务器中间件
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> 开发</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="changelog.html">
+            
+                
+                    <a href="./changelog.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        变更日志
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="roadmap.html">
+            
+                
+                    <a href="./roadmap.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        路线图
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="ideas.html">
+            
+                
+                    <a href="./ideas.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        点子
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" >
+            
+            <span><b>7.4.</b> 贡献</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >webpack</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="%E4%BD%BF%E7%94%A8%E5%8A%A0%E8%BD%BD%E5%99%A8">&#x4F7F;&#x7528;&#x52A0;&#x8F7D;&#x5668;</h1>
+<h2 id="%E4%BB%80%E4%B9%88%E6%98%AF%E5%8A%A0%E8%BD%BD%E5%99%A8">&#x4EC0;&#x4E48;&#x662F;&#x52A0;&#x8F7D;&#x5668;</h2>
+<p>&#x52A0;&#x8F7D;&#x5668;&#x662F;&#x628A;&#x4E00;&#x4E2A;&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#x4F5C;&#x4E3A;&#x5165;&#x53C2;&#x8F6C;&#x6362;&#x4E3A;&#x53E6;&#x4E00;&#x4E2A;&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#x7684; node.js &#x51FD;&#x6570;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x52A0;&#x8F7D;&#x5668;&#x6765;&#x8BA9; webpack &#x6765;&#x52A0;&#x8F7D; CoffeeScript &#x6216; JSX &#x6587;&#x4EF6;&#x3002;</p>
+<h3 id="%E5%8A%A0%E8%BD%BD%E5%99%A8%E7%89%B9%E6%80%A7">&#x52A0;&#x8F7D;&#x5668;&#x7279;&#x6027;</h3>
+<ul>
+<li>&#x52A0;&#x8F7D;&#x5668;&#x53EF;&#x4EE5;&#x4E32;&#x8054;&#x3002;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7BA1;&#x9053;&#x6765;&#x5904;&#x7406;&#x8D44;&#x6E90;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x52A0;&#x8F7D;&#x5668;&#x9700;&#x8981;&#x8F93;&#x51FA;&#x4E3A; JavaScript&#xFF0C;&#x4E2D;&#x95F4;&#x522B;&#x7684;&#x52A0;&#x8F7D;&#x5668;&#x53EF;&#x4EE5;&#x8F93;&#x51FA;&#x4EFB;&#x610F;&#x7684;&#x683C;&#x5F0F;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x52A0;&#x8F7D;&#x5668;&#x3002;</li>
+<li>&#x52A0;&#x8F7D;&#x5668;&#x53EF;&#x4EE5;&#x662F;&#x540C;&#x6B65;&#x7684;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x5F02;&#x6B65;&#x7684;</li>
+<li>&#x52A0;&#x8F7D;&#x5668;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; node.js &#x6765;&#x5904;&#x7406;&#x6240;&#x6709;&#x7684;&#x4E8B;&#x60C5;</li>
+<li>&#x52A0;&#x8F7D;&#x5668;&#x53EF;&#x4EE5;&#x4F20;&#x67E5;&#x8BE2;&#x53C2;&#x6570;&#xFF0C;&#x8FD9;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6765;&#x914D;&#x7F6E;</li>
+<li>&#x52A0;&#x8F7D;&#x5668;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6269;&#x5C55;&#x6216;&#x6B63;&#x5219;&#x6765;&#x7ED1;&#x5B9A;</li>
+<li>&#x52A0;&#x8F7D;&#x5668;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>npm</code> &#x6765;&#x53D1;&#x5E03;&#x53CA;&#x5B89;&#x88C5;</li>
+<li>&#x6A21;&#x5757;&#x9664;&#x4E86;&#x5728; <code>package.json</code> &#x4E2D;&#x7684; <code>main</code> &#x5B57;&#x6BB5;&#x5916;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>loader</code> &#x5B57;&#x6BB5;&#x6765;&#x5BFC;&#x51FA;&#x52A0;&#x8F7D;&#x5668;</li>
+<li>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6765;&#x8BBF;&#x95EE;&#x52A0;&#x8F7D;&#x5668;</li>
+<li>&#x63D2;&#x4EF6;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x52A0;&#x8F7D;&#x5668;&#x66F4;&#x591A;&#x7279;&#x6027;</li>
+<li>&#x52A0;&#x8F7D;&#x5668;&#x53EF;&#x4EE5;&#x4EA7;&#x51FA;&#x4EFB;&#x4F55;&#x683C;&#x5F0F;&#x7684;&#x6587;&#x4EF6;</li>
+<li><a href="loader.md">&#x66F4;&#x591A;&#x2026;&#x2026;</a></li>
+</ul>
+<p>&#x5982;&#x679C;&#x5BF9;&#x52A0;&#x8F7D;&#x5668;&#x4F7F;&#x7528;&#x793A;&#x4F8B;&#x6709;&#x5174;&#x8DA3;&#xFF0C;&#x53EF;&#x4EE5;&#x67E5;&#x770B;<a href="list-of-orders.md">&#x52A0;&#x8F7D;&#x5668;&#x5217;&#x8868;</a>&#x3002;</p>
+<h2 id="%E8%A7%A3%E6%9E%90%E5%8A%A0%E8%BD%BD%E5%99%A8">&#x89E3;&#x6790;&#x52A0;&#x8F7D;&#x5668;</h2>
+<p><a href="resolving.html">&#x89E3;&#x6790;&#x52A0;&#x8F7D;&#x5668;</a>&#x548C;&#x89E3;&#x6790;&#x6A21;&#x5757;&#x7C7B;&#x4F3C;&#x3002;&#x4E00;&#x4E2A;&#x52A0;&#x8F7D;&#x5668;&#x6A21;&#x5757;&#x5373;&#x4E00;&#x4E2A;&#x5BFC;&#x51FA;&#x51FD;&#x6570;&#x7684; node.js &#x6A21;&#x5757;&#x3002;&#x4E00;&#x822C;&#x901A;&#x8FC7; npm &#x6765;&#x53D1;&#x5E03;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x4F46;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x628A;&#x52A0;&#x8F7D;&#x5668;&#x5B58;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x3002;</p>
+<h3 id="%E5%BC%95%E7%94%A8%E5%8A%A0%E8%BD%BD%E5%99%A8">&#x5F15;&#x7528;&#x52A0;&#x8F7D;&#x5668;</h3>
+<p>&#x867D;&#x7136;&#x4E0D;&#x662F;&#x5F3A;&#x5236;&#x8981;&#x6C42;&#xFF0C;&#x4F46;&#x60EF;&#x4F8B;&#x628A;&#x52A0;&#x8F7D;&#x5668;&#x547D;&#x540D;&#x4E3A; <code>XXX-loader</code>&#xFF0C;&#x5176;&#x4E2D; <code>XXX</code> &#x5C31;&#x662F;&#x52A0;&#x8F7D;&#x5668;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x5982;&#xFF1A;<code>json-loader</code>&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5168;&#x79F0;&#xFF08;&#x5B9E;&#x9645;&#x7684;&#x540D;&#x79F0;&#xFF09;&#x6765;&#x5F15;&#x7528;&#x52A0;&#x8F7D;&#x5668;&#xFF08;&#x5982; <code>json-loader</code>&#xFF09;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7B80;&#x7565;&#x540D;&#x6765;&#x5F15;&#x7528;&#xFF08;&#x5982; <code>json</code>&#xFF09;&#x3002;</p>
+<p>&#x52A0;&#x8F7D;&#x5668;&#x7684;&#x547D;&#x540D;&#x60EF;&#x4F8B;&#x548C;&#x641C;&#x7D22;&#x4F18;&#x5148;&#x7EA7;&#x662F;&#x901A;&#x8FC7; webpack &#x7684;&#x914D;&#x7F6E; api <code>resolveLoader.moduleTemplate</code> &#x6765;&#x6307;&#x5B9A;&#x7684;&#x3002;</p>
+<p>&#x53C2;&#x8003;&#x4E0B;&#x9762;&#x7684;&#x7528;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x52A0;&#x8F7D;&#x5668;&#x547D;&#x540D;&#x60EF;&#x4F8B;&#x5F88;&#x6709;&#x7528;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x901A;&#x8FC7; <code>require()</code> &#x8BED;&#x53E5;&#x6765;&#x5F15;&#x7528;&#x52A0;&#x8F7D;&#x5668;&#x65F6;&#x3002;</p>
+<h3 id="%E5%AE%89%E8%A3%85%E5%8A%A0%E8%BD%BD%E5%99%A8">&#x5B89;&#x88C5;&#x52A0;&#x8F7D;&#x5668;</h3>
+<p>&#x5982;&#x679C;&#x52A0;&#x8F7D;&#x5668;&#x53D1;&#x5E03;&#x5728; npm &#x4E0A;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x4E24;&#x4E2A;&#x547D;&#x4EE4;&#x6765;&#x5B89;&#x88C5;</p>
+<p><code>$ npm install xxx-loader --save</code></p>
+<p><code>$ npm install xxx-loader --save-dev</code></p>
+<h2 id="%E7%94%A8%E6%B3%95">&#x7528;&#x6CD5;</h2>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x6709;&#x591A;&#x79CD;&#x65B9;&#x5F0F;&#x6765;&#x4F7F;&#x7528;&#x52A0;&#x8F7D;&#x5668;&#x3002;</p>
+<ul>
+<li>&#x901A;&#x8FC7; <code>require</code> &#x8BED;&#x53E5;&#x663E;&#x793A;&#x6307;&#x5B9A;</li>
+<li>&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6765;&#x6307;&#x5B9A;</li>
+<li>&#x901A;&#x8FC7;&#x547D;&#x4EE4;&#x884C;&#x6765;&#x6307;&#x5B9A;</li>
+</ul>
+<h3 id="%E9%80%9A%E8%BF%87-require">&#x901A;&#x8FC7; <code>require</code></h3>
+<blockquote>
+<p>&#x6CE8;&#xFF1A;&#x5C3D;&#x91CF;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x5E0C;&#x671B;&#x811A;&#x672C;&#x53EF;&#x4EE5;&#x73AF;&#x5883;&#x65E0;&#x5173;&#x5730;&#x540C;&#x65F6;&#x8DD1;&#x5728; node.js &#x548C;&#x6D4F;&#x89C8;&#x5668;&#x73AF;&#x5883;&#x4E2D;&#x3002;&#x4F18;&#x5148;&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x547D;&#x540D;&#x60EF;&#x4F8B;&#x6765;&#x6307;&#x5B9A;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x53C2;&#x8003;&#x4E0B;&#x4E00;&#x8282;&#x3002;</p>
+</blockquote>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>require</code> &#x8BED;&#x53E5;&#xFF08;&#x6216; <code>define</code>&#x3001;<code>require.ensure</code> &#x7B49;&#xFF09;&#x6765;&#x6307;&#x5B9A;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x7528; <code>!</code> &#x6765;&#x5206;&#x9694;&#x8D44;&#x6E90;&#x5373;&#x53EF;&#xFF0C;&#x6BCF;&#x90E8;&#x5206;&#x90FD;&#x662F;&#x76F8;&#x5BF9;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;./loader!./dir/file.txt&quot;</span>);
+<span class="hljs-comment">// =&gt; &#x4F7F;&#x7528;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x7684; &quot;loader.js&quot; &#x6765;&#x8F6C;&#x6362; &quot;dir&quot; &#x76EE;&#x5F55;&#x4E0B;&#x7684; &quot;file.txt&quot; &#x6587;&#x4EF6;</span>
+
+<span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;jade!./template.jade&quot;</span>);
+<span class="hljs-comment">// =&gt; &#x4F7F;&#x7528; &quot;jade-loader&quot; &#xFF08;&#x901A;&#x8FC7; npm &#x5B89;&#x88C5;&#x5728; &quot;node_modules&quot; &#x76EE;&#x5F55;&#xFF09;&#x6765;&#x8F6C;&#x6362; &quot;template.jade&quot; &#x6587;&#x4EF6;</span>
+
+<span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;style!css!less!bootstrap/less/bootstrap.less&quot;</span>);
+<span class="hljs-comment">// =&gt; &#x901A;&#x8FC7; github &#x6765;&#x5B89;&#x88C5;&#x5728; &quot;node_modules&quot; &#x76EE;&#x5F55;&#x4E0B;&#x7684; &quot;bootstrap&quot; &#x6A21;&#x5757;&#x91CC;&#x7684; &quot;less&quot; &#x76EE;&#x5F55;&#x91CC;&#x7684; &quot;bootstrap.less&quot;</span>
+<span class="hljs-comment">//    &#x6587;&#x4EF6;&#x4F1A;&#x5148;&#x88AB; &quot;less-loader&quot; &#x8F6C;&#x6362;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x88AB; &quot;css-loader&quot; &#x8F6C;&#x6362;&#xFF0C;&#x6700;&#x540E;&#x88AB; &quot;style-loader&quot; &#x8F6C;&#x6362;</span>
+</code></pre>
+<h3 id="%E9%80%9A%E8%BF%87%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6">&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h3>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6B63;&#x5219;&#x6765;&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x7ED1;&#x5B9A;&#x52A0;&#x8F7D;&#x5668;</p>
+<pre><code class="lang-js">{
+    <span class="hljs-built_in">module</span>: {
+        loaders: [
+            { test: <span class="hljs-regexp">/\.jade$/</span>, loader: <span class="hljs-string">&quot;jade&quot;</span> },
+            <span class="hljs-comment">// =&gt; &quot;jade&quot; loader is used for &quot;.jade&quot; files</span>
+
+            { test: <span class="hljs-regexp">/\.css$/</span>, loader: <span class="hljs-string">&quot;style!css&quot;</span> },
+            <span class="hljs-comment">// =&gt; &quot;style&quot; and &quot;css&quot; loader is used for &quot;.css&quot; files</span>
+            <span class="hljs-comment">// Alternative syntax:</span>
+            { test: <span class="hljs-regexp">/\.css$/</span>, loaders: [<span class="hljs-string">&quot;style&quot;</span>, <span class="hljs-string">&quot;css&quot;</span>] },
+        ]
+    }
+}
+</code></pre>
+<h3 id="%E9%80%9A%E8%BF%87%E5%91%BD%E4%BB%A4%E8%A1%8C">&#x901A;&#x8FC7;&#x547D;&#x4EE4;&#x884C;</h3>
+<p>&#x901A;&#x8FC7; CLI &#x6269;&#x5C55;&#x53C2;&#x6570;&#x6765;&#x7ED1;&#x5B9A;&#x52A0;&#x8F7D;&#x5668;</p>
+<pre><code class="lang-bash">$ webpack --module-bind jade --module-bind <span class="hljs-string">&apos;css=style!css&apos;</span>
+</code></pre>
+<p>&#x4E0A;&#x8FF0;&#x547D;&#x4EE4;&#x7ED9; <code>.jade</code> &#x6587;&#x4EF6;&#x7ED1;&#x5B9A;&#x4E86; <code>jade</code> &#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x7ED9; <code>.css</code> &#x6587;&#x4EF6;&#x73ED;&#x5B9A;&#x4E86; <code>style</code> &#x548C; <code>css</code> &#x52A0;&#x8F7D;&#x5668;&#x3002;</p>
+<h3 id="%E6%9F%A5%E8%AF%A2%E5%8F%82%E6%95%B0">&#x67E5;&#x8BE2;&#x53C2;&#x6570;</h3>
+<p>&#x52A0;&#x8F7D;&#x5668;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x67E5;&#x8BE2; web &#x98CE;&#x683C;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6765;&#x6307;&#x5B9A;&#x67E5;&#x8BE2;&#x53C2;&#x6570;&#xFF0C;&#x5982;&#xFF1A;<code>url-loader?mimetype=image/png</code>&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#xFF1A;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x683C;&#x5F0F;&#x8981;&#x770B;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x5177;&#x4F53;&#x683C;&#x5F0F;&#x53C2;&#x8003;&#x52A0;&#x8F7D;&#x5668;&#x6587;&#x6863;&#x3002;&#x5927;&#x591A;&#x6570;&#x7684;&#x52A0;&#x8F7D;&#x5668;&#x652F;&#x6301;&#x666E;&#x901A;&#x7684;&#x67E5;&#x8BE2;&#x683C;&#x5F0F;&#xFF08;<code>?key=value&amp;key2=value2</code>&#xFF09;&#x548C; JSON &#x5BF9;&#x8C61;&#xFF08;<code>?{&quot;key&quot;:&quot;value&quot;,&quot;key2&quot;:&quot;value2&quot;}</code>&#xFF09;&#x3002;</p>
+</blockquote>
+<h4 id="-require"><code>require</code></h4>
+<pre><code class="lang-js"><span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;url-loader?mimetype=image/png!./file.png&quot;</span>);
+</code></pre>
+<h4 id="%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6">&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h4>
+<pre><code class="lang-js">{ test: <span class="hljs-regexp">/\.png$/</span>, loader: <span class="hljs-string">&quot;url-loader?mimetype=image/png&quot;</span> }
+</code></pre>
+<p>&#x6216;</p>
+<pre><code class="lang-js">{
+    test: <span class="hljs-regexp">/\.png$/</span>,
+    loader: <span class="hljs-string">&quot;url-loader&quot;</span>
+    query: { mimetype: <span class="hljs-string">&quot;image/png&quot;</span> }
+}
+</code></pre>
+<h4 id="%E5%91%BD%E4%BB%A4%E8%A1%8C">&#x547D;&#x4EE4;&#x884C;</h4>
+<pre><code class="lang-bash">webpack --module-bind <span class="hljs-string">&quot;png=url-loader?mimetype=image/png&quot;</span>
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./usage.html" class="navigation navigation-prev " aria-label="Previous page: 用法"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./using-plugins.html" class="navigation navigation-next " aria-label="Next page: 使用插件"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

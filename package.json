@@ -1,0 +1,26 @@
+{
+  "name": "webpack-doc",
+  "version": "1.0.0",
+  "description": "webpack 非官方文档，个人学习用",
+  "scripts": {
+    "serve": "gitbook serve",
+    "build": "gitbook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liunian/webpack-doc.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "liunian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liunian/webpack-doc/issues"
+  },
+  "homepage": "https://github.com/liunian/webpack-doc#readme",
+  "devDependencies": {
+    "gitbook": "^3.2.0",
+    "gitbook-cli": "^2.3.0"
+  }
+}
